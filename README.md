@@ -16,7 +16,7 @@ Este é o frontend de um sistema de gerenciamento de livros. Ele permite adicion
 ## Instalação
 
 1. Clone este repositório:
-   git clone https://github.com/BrunoWAS/book-management-frontend.git
+   git clone https://github.com/FelipeBNovaes/start-frontend.git
 
 2. Entre na pasta do projeto:
    cd book-management-frontend
