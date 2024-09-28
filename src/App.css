@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #261817;
-  --secondary-color: #ec755b;
-  --highlight-color: #825e4a;
-  --background-color: #fff6ec; /* Background mantido conforme pedido */
-  --accent-color: #f8e0b4;
+  --primary-color: #1E3A8A;
+  --secondary-color: #3B82F6;
+  --highlight-color: #60A5FA;
+  --background-color: #DBEAFE; /* Background */
+  --accent-color: #93C5FD;
 }
 
 body {
@@ -15,22 +15,25 @@ body {
 .header {
   background-color: var(--primary-color);
   color: white;
-  padding: 10px;
+  padding: 10px 20px; /* Alterado para incluir espaçamento lateral */
 }
 
 .header-container {
   display: flex;
-  justify-content:flex-start;
+  justify-content: space-between; /* Alinhamento dos itens em ambos os lados */
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
-  gap: 100px;
+  margin: 0 auto; /* Centraliza o cabeçalho */
+  gap: 100px; /* Se você desejar que haja espaçamento horizontal entre os elementos */
 }
 
 .system-name {
-  margin: 0;
-  font-size: 1.8rem;
-  color: var(--secondary-color);
+  flex-grow: 1; /* Faz o cabeçalho se expandir para ocupar o espaço disponível */
+  text-align: left; /* Centraliza o texto do título */
+  font-size: 50px;
+  margin: 0; /* Remove margem */
+  /*font-size: 1.8rem; /* Mantém o tamanho da fonte desejado */
+  color: var(--secondary-color); /* Cor do título ajustada */
 }
 
 .nav {
@@ -38,14 +41,15 @@ body {
 }
 
 .nav-link {
-  margin-left: 20px;
-  text-decoration: none;
+  margin-left: 20px; /* Mantém o espaçamento entre os links */
+  /*text-decoration: none;*/
   color: var(--accent-color);
-  font-size: 1.2rem;
+  font-size: 25px
+  /*font-size: 1.2rem; /* Manter o tamanho da fonte */
 }
 
 .nav-link:hover {
-  color: var(--highlight-color);
+  color: var(--highlight-color); /* Mantém o efeito de hover */
 }
 
 .book-list {
@@ -63,12 +67,16 @@ body {
   text-align: center;
 }
 
+.book-card-title {
+  text-align: center; /* Centraliza o título do card */
+}
+
 h1, h2 {
   color: var(--primary-color);
 }
 
 button {
-  margin: 5px;
+  margin: 10px;
 }
 
 .modal {
